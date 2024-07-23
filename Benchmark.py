@@ -31,6 +31,7 @@ class BertForSequenceClassification(nn.Module, PyTorchModelHubMixin):
                 }
 
 model = BertForSequenceClassification.from_pretrained("ANP1/finbert-tone-v0")
+model.eval()
 
 def score(logit):
   return logit[0]*-1 + logit[1]*0 + logit[2]*1
