@@ -1,0 +1,9 @@
+numpy
+torch
+tqdm
+boto3
+requests
+regex
+sentencepiece
+sacremoses
+huggingface_hub
