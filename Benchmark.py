@@ -50,9 +50,3 @@ def sentimentanalysis(myinputs):
     logit = outputs[i,:]
     finalresults.append([myinputs[i], score(logit),magnitude(logit)])
   return finalresults
-
-myinputs = ["we don't expect a lot",
-            "growth is strong and will continue to be",
-            "the CEO had a meeting",
-            "stock market meltdown"]
-print(sentimentanalysis(myinputs))
